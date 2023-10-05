@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+header,
+footer,
+section {
+    width: 100%;
+}
+
+.about div {
+    width: 50%;
+    float: left;
+    padding: 1rem;
+    text-align: center;
+}
+
+div.col-1,
+div.col-2 {
+    width: 48%; 
+    float: left;
+    padding: 1rem;
+    margin: 1rem 1rem;
+}
+
+h6 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.simmons {
+    width: 20%;
+}
+
+.mission .col-1,
+.mission .col-2 {
+    border-top: 3px solid var(--pink);
+}
+
+/* base styles */
+:root {
+    --lightblue: rgb(241,243,245);
+    --mediumblue: rgb(184,197,208);
+    --darkblue: rgba(143,156,163);
+    --darkgray: rgb(34, 34, 40); 
+    --white: rgb(255, 255, 255);
+    --pink: rgb(255, 197, 207); 
+}
+
+h2,
+h3,
+h4 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about h2 {
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.detail {
+    font-style: italic;
+    color: gray;
+}
+
+.mission,
+.team h4 {
+    text-align: center;
+}
+
+span {
+    font-weight: 700;
+}
+
+.mission p,
+.history p,
+.team p,
+.partners p {
+    font-size: 1.8rem;
+}
+
+.partners p {
+    margin-bottom: 0.8rem;
+}
+
+.about,
+.history {
+    background: var(--lightblue);
+}
+
+figcaption {
+    text-align: center;
+    padding-top: -1rem;
+}
+
+.about .page-btn,
+.newsletter .page-btn
+.history .page-btn.show-1015 {
+    width: 22%;
+    height: 4rem;
+}
+
+header .apply-btn {
+    width: 10%;
+    height: 3rem;
+    background: var(--darkgray);
+    color: var(--white);
+}
+
+/* nav */
+nav {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 2rem;
+    color: black;
+    padding: 0 3rem;
+}
+
+.about img {
+    width: 60%;
+}
+
+.business {
+    padding-left: 2rem;
+}
+
+.mission > div,
+.team div {
+    margin: 5rem 10rem;
+}
+
+/* history */
+
+.left-about h1,
+.left-about h2 {
+    text-align: left;
+}
+
+.mission h2 {
+    padding-bottom: 2rem;
+}
+
+.history img {
+    width: 70%;
+    margin: 4rem;
+}
+
+.history .col-1 {
+    width: 55%;
+    float: left;
+    padding: 5rem;
+}
+
+.history .col-2 {
+    width: 40%;
+}
+
+/* who */
+.text-box {
+    border: .1rem solid gray;
+    padding: 3rem;
+}
+
+/*team*/
+
+.headshot {
+    width: 10%;
+    float: left;
+    padding-right: 1rem;
+}
+
+.team h5 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* footer */
+
+.top p,
+footer a,
+footer li {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.newsletter {
+    background: var(--mediumblue);
+}
+
+.newsletter h6,
+.newsletter form {
+    width: 40%;
+    float: left;
+}
+
+.newsletter h6 {
+    font-size: 2.5rem;
+    padding-left: 4.5rem;
+    color: white;
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    padding-top: 2rem;
+}
+
+input,
+.page-btn {
+    padding: 1rem 3.5rem;
+}
+
+.page-btn {
+    background: var(--darkblue);
+    color: var(--white);
+}
+
+
+.main-footer,
+.secondary-nav {
+    background: var(--darkblue);
+}
+
+.main-footer div.top,
+.line {
+    margin: 0 4rem;
+}
+
+.main-footer div.right {
+    text-align: right;
+}
+
+.line {
+    border-top: .1rem solid white;
+}
+
+.secondary-nav {
+    font-weight: 700;
+}
+
+.home,
+.program,
+.jwlia,
+.standalone {
+    float: left;
+    font-size: 1.5rem;
+}
+
+.standalone {
+    list-style-type: none;
+}
+
+.copy-socials li,
+.standalone li {
+    display: inline-block;
+}
+
+.home a,
+.program a,
+.jwlia a,
+.standalone li {
+    padding-right: 4rem;
+    font-weight: 600;
+
+}
+
+.copy-socials {
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.copy-socials p {
+    padding-right: 72rem;
+}
+
+/* media query */
+
+@media screen and (max-width: 3000px) {
+    .show-1015 {
+        display: none;
+    }
+    .show-603 {
+        display: none;
+    }
+    .show-1030 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    .mission .col-1,
+    .mission .col-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .partners {
+        display: none;
+    }
+    .show-1030 {
+        display: block;
+    }
+    .hide-1030 {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .hide-865 {
+        display: none;
+    }
+    .history .col-1,
+    div.left-about {
+        width: 100%;
+    }
+    .copy-socials p {
+        padding-right: 11rem;
+    }
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav a,
+    .apply-btn {
+        display: none;
+    }
+    .show-603 {
+        display: block;
+    }
+    .hide-603 {
+        display: none;
+    }
+    html {
+        font-size: 45%;
+    }
+    .hide-500 {
+        display: none;
+    }
+    input,
+    .page-btn {
+        padding: 0 2rem;
+        float: left;
+    }
+
+}
